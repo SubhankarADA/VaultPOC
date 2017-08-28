@@ -1,0 +1,15 @@
+spring:
+    cloud.vault:
+        config.lifecycle.enabled: true
+    datasource:
+        connection_url: root:ada014!@tcp(localhost:3306)/
+        plugin_name: mysql-database-plugin
+        allowed_roles: readonly
+        db_name: mysql
+        default_ttl: 20s
+        max_ttl: 1m
+vault:
+  token: 00000000-0000-0000-0000-000000000000
+  host: 192.168.10.14
+  port: 8200
+  scheme: http
